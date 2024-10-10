@@ -16,8 +16,8 @@ def bubble_sort(arr)
       # if the element to the right is smaller then switch elements
       if arr[x] > arr[x + 1]
         arr[x], arr[x + 1] = arr[x + 1], arr[x]
-      end # end if
-    end # end times
+      end
+    end
     iterations -= 1
   end
  arr
