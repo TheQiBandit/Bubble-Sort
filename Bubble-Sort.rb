@@ -1,13 +1,19 @@
 def bubble_sort(arr)
-
+   
+  # return array incase of a 1 element array
   return arr if arr.length <= 1
 
+  # variable to control how many times to run the loop
+  n = arr.length - 1
 
-  (arr.length - 1).times do |x|
+  # run the loop n times to pass through the array and switch elements
+  n.times do |x|
+
+    # if the element to the right is smaller then switch elements
     if arr[x] > arr[x + 1]
       arr[x], arr[x + 1] = arr[x + 1], arr[x]
-    end
-  end
+    end # end if
+  end # end times
  arr
 end
 
